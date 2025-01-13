@@ -6,8 +6,64 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "x",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "deleteEL",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "read",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Test.sol": "MyContract"
+			"contracts/Contract.sol": "MyContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Test.sol": {
-			"keccak256": "0x98ba92c68d9505b5d4e382fae5a45d1786e6e49c750a5dab7cffe6f33fc1259e",
+		"contracts/Contract.sol": {
+			"keccak256": "0xba1e872d1833a9f20d0a36517f5a8a7087e2dc24e5084d270206662270672b28",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5e0747bc1c50eb787f206c2af92e4978ca95a3eb177b097320c2705c0258e1ba",
-				"dweb:/ipfs/QmV8ZMGP6VJMGbeiEYSUtt8e8P3itwhbGt4X5AJnfzyvZv"
+				"bzz-raw://992941bf2adff0b30acc24eb386b3cee4f59ad6d340579c83310ba5cc5a52136",
+				"dweb:/ipfs/QmPnbYhkYavfM8JUMHC7FiZJNBVNSCDkNsR1JtugUDRKVR"
 			]
 		}
 	},
